@@ -43,7 +43,9 @@ jobs:
         run: echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
 
       - name: Build the Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/cicdpip:latest .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/robiul:latest .
 
       - name: Push to Docker Hub
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/cicdpip:latest
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/robiul:latest
+
+        name: CI Pipeline
