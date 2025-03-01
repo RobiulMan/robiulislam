@@ -33,7 +33,7 @@ export async function generateMetadata({
     return {};
   }
 
-  const ogUrl = new URL(`${siteConfig.siteUrl}${project.image.src}`);
+  const ogUrl = new URL(`${siteConfig.siteUrl}${project.image}`);
   ogUrl.searchParams.set("heading", project.title);
   ogUrl.searchParams.set("type", "Blog Post");
   ogUrl.searchParams.set("mode", "dark");

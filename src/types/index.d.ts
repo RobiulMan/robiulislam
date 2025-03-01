@@ -51,17 +51,22 @@ export type NavItem = {
   url: string;
 };
 
+export type Image = {
+  src: string;
+  alt: string;
+};
+
 export type Article = {
   url: string;
   slug: string;
   title: string;
   description: string;
-  date: string; // ISO date string
+  date: string;
   published: boolean;
   tags: string[];
-  body: string; // Assuming MDX content as a string
-  image?: string;
-  imageDark?: string;
-  toc?: any; // Table of contents structure, define explicitly if needed
+  body: string;
+  image: string; // Ensure this matches the expected type
+  imageDark: string;
+  toc: TocEntry[];
   author: string;
 };

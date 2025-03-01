@@ -2,12 +2,16 @@ import { blogs } from "#velite";
 import { z } from "velite";
 import Picture from "@/components/picture";
 import Link from "next/link";
+import React from "react";
+import { Article } from "@/types";
 
-export default function BlogCard({
-  blog,
-}: {
-  blog: z.infer<typeof blogs.schema>;
-}) {
+type BlogCardProps = {
+  blog: Article
+}
+const  BlogCard: React.FC<BlogCardProps> = ({
+  blog
+}) => {
+
   return (
     <Link href={`${blog.url}`} target="_blank">
       <div className="w-full h-full max-w-lg rounded-xl overflow-hidden border hover:border-primary duration-100 transition-all ease-in-out">
@@ -48,3 +52,5 @@ export default function BlogCard({
     </Link>
   );
 }
+
+export default BlogCard;

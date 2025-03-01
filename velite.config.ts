@@ -25,8 +25,8 @@ export const blogs = defineCollection({
       published: s.boolean().default(true),
       tags: s.array(s.string()),
       body: s.mdx(),
-      image: s.image(),
-      imageDark: s.image(),
+      image: s.string(),
+      imageDark: s.string(),
       toc: s.toc(),
       author: s.string(),
     })
@@ -80,8 +80,8 @@ export const projects = defineCollection({
       date: s.isodate(),
       tags: s.array(s.string()),
       body: s.mdx(),
-      image: s.image(),
-      imageDark: s.image().optional(),
+      image: s.string(),
+      imageDark: s.string(),
       links: s.array(
         s.object({
           name: s.string(),

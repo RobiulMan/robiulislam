@@ -24,6 +24,13 @@ const nextConfig = {
         protocol: "https",
         hostname: "dev-to-uploads.s3.amazonaws.com",
       },
+      {
+        protocol: "https",
+        protocol: "http",
+        hostname: "localhost:3000",
+        pathname: '/assets/**',
+
+      },
     ],
   },
   async headers() {

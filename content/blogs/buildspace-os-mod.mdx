@@ -3,8 +3,8 @@ title: I modded the Buildspace OS
 description: A journey of me modding the buildspace os chrome extension to customize the look
 date: 2024-06-20
 tags: ["buildspace", "buildspace-os", "chrome extension"]
-image: "./assets/buildspace-os-mod/buildspace-os-mod.png"
-imageDark: "./assets/buildspace-os-mod/buildspace-os-mod-dark.png"
+image: "/assets/buildspace-os-mod/buildspace-os-mod.png"
+imageDark: "/assets/buildspace-os-mod/buildspace-os-mod-dark.png"
 published: true
 author: rds
 ---
@@ -181,7 +181,7 @@ Later my folder structure looked like this:
 
 **The meme that programmers now will just ask chatgpt rather than going to stackoverflow is not true & useful at all. It's better to google it first, and then ask chatgpt if you can't find the answer**
 
-![meme](assets/buildspace-os-mod/meme.png)
+![meme](/assets/buildspace-os-mod/meme.png)
 
 ## moment of truth
 
@@ -200,7 +200,7 @@ This is how it looked:
 
 <div align="center">
   <br />
-  <img width="300px" src="assets/buildspace-os-mod/ui-1.png" />
+  <img width="300px" src="/assets/buildspace-os-mod/ui-1.png" />
   <br />
 </div>
 
@@ -230,7 +230,7 @@ So I thought, as the [buildspace os mod](https://github.com/rudrodip/buildspace-
 
 <div align="center">
   <br />
-  <img width="300px" src="assets/buildspace-os-mod/ui-2.png" />
+  <img width="300px" src="/assets/buildspace-os-mod/ui-2.png" />
   <br />
 </div>
 
@@ -249,7 +249,7 @@ So, I thought it would be nice to have a input field that let's me enter any vid
 
 <div align="center">
   <br />
-  <img width="300px" src="assets/buildspace-os-mod/ui-final.png" />
+  <img width="300px" src="/assets/buildspace-os-mod/ui-final.png" />
   <br />
 </div>
 
@@ -260,7 +260,7 @@ Then, I thought of adding some more fields. Like some checkboxes for video param
 I rewrote the whole `popup.js` file, created a separate `style.css` file. I rewrote the `content.js` file, as the chatgpt code was horrible.
 
 After all of this, the UI now looks like this:
-![buildspace-os-mod](./assets/buildspace-os-mod/buildspace-os-mod-dark.png)
+![buildspace-os-mod](/assets/buildspace-os-mod/buildspace-os-mod-dark.png)
 
 You have a dead simple UI. First input field for custom title, second input field for image url, third input field for video url, and some checkboxes for video parameters. And finally a textarea for custom html. You can insert any image url, video url, or html, and it will replace the video with the image, video, or html.
 
@@ -328,7 +328,7 @@ chrome.runtime.onMessage.addListener((message) => {
 });
 ```
 
-![workflow](assets/buildspace-os-mod/workflow.png)
+![workflow](/assets/buildspace-os-mod/workflow.png)
 
 ## setup
 

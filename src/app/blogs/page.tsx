@@ -9,6 +9,7 @@ export default async function BlogSection() {
     "https://dev.to/api/articles?username=robiulman",
   );
   const jsonData = await fetchData.json();
+  
 
   const devToArticles: Article[] = jsonData.map((article: any) => ({
     url: article.url,
