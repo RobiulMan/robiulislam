@@ -1,0 +1,19 @@
+name: CD Pipeline
+
+on:
+  workflow_run:
+    workflows: ["CI Pipeline"]
+    types:
+      - completed
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Pull Docker image
+        run: docker pull robiul692/robiulislam:latest
+      - name: Delete Old docker container
+        run: docker rm -f robiulislam-container || true
+      - name: Run Docker Container
+        run: docker run -d -p 3000:3000 --name robiulislam-container robiul692/robiulislam
