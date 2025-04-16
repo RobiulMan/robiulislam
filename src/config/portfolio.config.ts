@@ -3,7 +3,7 @@ import type { Portfolio } from "@/types";
 
 export const portfolioConfig: Portfolio = {
   name: "Robiul Islam",
-  tagline: "Let's make things better in a tech.",
+  tagline: "Let's make things better in a tech!",
   bio: "Hey,  I'm a self-taught backend focus - front-end developer. I've been coding since 2018, and I have a strong foundation in programming.I'm currently focusing on the MERN Stack to build a scalable app.",
   image: robiulislamImage,
   resume:
